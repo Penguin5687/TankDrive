@@ -15,5 +15,16 @@ package frc.robot;
 public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
+    public static final double FORWARD_SPEED = 0.3;
+    public static final double TURN_SPEED = 0.3;
+  }
+  public final class MotorConfigurations {
+    public static final int LEFT_MOTOR_1_PORT = 0;
+    public static final int LEFT_MOTOR_2_PORT = 1;
+    public static final int RIGHT_MOTOR_1_PORT = 2;
+    public static final int RIGHT_MOTOR_2_PORT = 3;
+
+    public static final boolean LEFT_MOTOR_INVERTED = false;
+    public static final boolean RIGHT_MOTOR_INVERTED = true;
   }
 }
