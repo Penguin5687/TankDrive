@@ -12,8 +12,11 @@ public class DriveCommand extends Command{
     @Override
     public void execute(){
         //double rawForward = -RobotContainer.driverController.getLeftY();
-        double forward = MathUtil.applyDeadband(-RobotContainer.driverController.getLeftY(), Constants.OperatorConstants.CONTROLLER_DEADBAND) * Constants.OperatorConstants.FORWARD_SPEED;
-        double turn = MathUtil.applyDeadband(-RobotContainer.driverController.getRightX(), Constants.OperatorConstants.CONTROLLER_DEADBAND) * Constants.OperatorConstants.TURN_SPEED;
+        double forward = MathUtil.applyDeadband(-RobotContainer.driverController.getLeftY(), Constants.OperatorConstants.CONTROLLER_DEADBAND);
+        double turn = MathUtil.applyDeadband(-RobotContainer.driverController.getRightX(), Constants.OperatorConstants.CONTROLLER_DEADBAND);
+
+        forward = ((forward * forward) * Math.signum(forward)) * Constants.OperatorConstants.FORWARD_SPEED;
+        turn = ((turn * turn) * Math.signum(turn)) * Constants.OperatorConstants.TURN_SPEED;
 
         double leftMotor = forward - turn;
         double rightMotor = forward + turn;
