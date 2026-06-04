@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 public class DriveSubsystem extends SubsystemBase{
     private final WPI_TalonSRX leftMotor1 = new WPI_TalonSRX(Constants.MotorConfigurations.LEFT_MOTOR_1_PORT);
     private final WPI_TalonSRX leftMotor2 = new WPI_TalonSRX(Constants.MotorConfigurations.LEFT_MOTOR_2_PORT);
-
+    //Change motor types oKOJFWUOFUAHFWUIFAWUIGFYYUWGFABFIYWB
     private final WPI_TalonSRX rightMotor1 = new WPI_TalonSRX(Constants.MotorConfigurations.RIGHT_MOTOR_1_PORT);
     private final WPI_TalonSRX rightMotor2 = new WPI_TalonSRX(Constants.MotorConfigurations.RIGHT_MOTOR_2_PORT);
     
