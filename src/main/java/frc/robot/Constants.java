@@ -17,6 +17,7 @@ public final class Constants {
     public static final int kDriverControllerPort = 0;
     public static final double FORWARD_SPEED = 0.3;
     public static final double TURN_SPEED = 0.3;
+    public static final double CONTROLLER_DEADBAND = 0.05;
   }
   public final class MotorConfigurations {
     public static final int LEFT_MOTOR_1_PORT = 0;
